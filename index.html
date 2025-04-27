@@ -18,26 +18,71 @@
     <link rel="stylesheet" href="/static/css/theme-toggle.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/static/favicon.ico">
+  <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="static/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="static/favicon/site.webmanifest" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://19216811-admin.github.io/">
-
-
-    <!-- Schema.org markup for Google -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "192.168.1.1",
+  "url": "https://19216811-admin.github.io",
+  "description": "Access your router admin panel easily using 192.168.1.1, 192.168.0.1, and more. Find step-by-step login guides for all major router brands like TP-Link, D-Link, Netgear, Linksys, and more.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "192.168.1.1 Admin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://19216811-admin.github.io/static/favicon/favicon-96x96.png"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://19216811-admin.github.io/router-guides?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "mainEntity": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Router Login Guide",
-          "url": "https://your-domain.com/",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://your-domain.com/router-guides?search={search_term_string}",
-            "query-input": "required name=search_term_string"
+          "@type": "Question",
+          "name": "How do I login to my router using 192.168.1.1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open a web browser and type http://192.168.1.1 in the address bar. Enter your router’s default username and password to access the admin panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if 192.168.1.1 is not working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your device is connected to the router. Try checking the router's manual for the correct login IP address or reset the router to factory settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find default login credentials for my router?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can find default login IPs, usernames, and passwords for major brands like TP-Link, Netgear, D-Link, Linksys on this website."
           }
         }
-        </script>
+      ]
+    }
+  ]
+}
+</script>
+
+
+    
 </head>
 
 <body>
@@ -125,7 +170,7 @@
                             <i class="fas fa-wifi fa-2x mb-3"></i>
                             <h3 class="router-ip">192.168.1.1</h3>
                             <p>Most common router IP address</p>
-                            <a href="http://192.168.1.1/" class="btn btn-primary">View Details</a>
+                            <a href="http://192.168.1.1/" class="btn btn-primary">View Login</a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +180,7 @@
                             <i class="fas fa-wifi fa-2x mb-3"></i>
                             <h3 class="router-ip">192.168.0.1</h3>
                             <p>Second most common router IP</p>
-                            <a href="http://192.168.0.1/" class="btn btn-primary">View Details</a>
+                            <a href="http://192.168.0.1/" class="btn btn-primary">View Login</a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +190,7 @@
                             <i class="fas fa-wifi fa-2x mb-3"></i>
                             <h3 class="router-ip">10.0.0.1</h3>
                             <p>Used by Apple and some ISPs</p>
-                            <a href="http://10.0.0.1/" class="btn btn-primary">View Details</a>
+                            <a href="http://10.0.0.1/" class="btn btn-primary">View Login</a>
                         </div>
                     </div>
                 </div>
@@ -155,16 +200,16 @@
                             <i class="fas fa-wifi fa-2x mb-3"></i>
                             <h3 class="router-ip">192.168.1.254</h3>
                             <p>Common for some Linksys routers</p>
-                            <a href="	http://192.168.1.254/" class="btn btn-primary">View Details</a>
+                            <a href="	http://192.168.1.254/" class="btn btn-primary">View Login</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="text-center mt-4">
-            <a href="/router-guides" class="btn btn-outline-primary">View All Router IPs &raquo;</a>
+            <a href="/router-brands.html/" class="btn btn-outline-primary">View All Router IPs &raquo;</a>
         </div>
-        </section>
+
 
         <!-- IP Lookup Section -->
         <section class="mb-5 ip-lookup-container">
@@ -314,7 +359,7 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a href="/blog" class="btn btn-outline-primary">View All Articles &raquo;</a>
+                <a href="/" class="btn btn-outline-primary">View All Articles &raquo;</a>
             </div>
         </section>
     </main>
@@ -334,19 +379,18 @@
                 <div class="col-md-4 mb-3">
                     <h5 class="footer-heading">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="/" class="footer-link">Home</a></li>
-                        <li><a href="/" class="footer-link">Router Login Guides</a></li>
-                        <li><a href="/" class="footer-link">IP Lookup Tool</a></li>
-                        <li><a href="/" class="footer-link">Troubleshooting Guides</a></li>
+                        <li><a href="/router-brands.html" class="footer-link">Router Login Guides</a></li>
+                        <li><a href="/ip-lookup.html" class="footer-link">IP Lookup Tool</a></li>
+                        <li><a href="/how-to-change-your-wifi-password.html" class="footer-link">Troubleshooting Guides</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5 class="footer-heading">Popular Routers IPs</h5>
                     <ul class="list-unstyled popular-routers-list">
-                        <li><a href="/http://192.168.1.1/" class="footer-link">192.168.1.1</a></li>
-                        <li><a href="/http://192.168.0.1/" class="footer-link">192.168.0.1</a></li>
-                        <li><a href="/http://10.0.0.1/" class="footer-link">10.0.0.1</a></li>
-                        <li><a href="/http://192.168.2.1/" class="footer-link">192.168.2.1</a></li>
+                        <li><a href="http://192.168.1.1/" class="footer-link">192.168.1.1</a></li>
+                        <li><a href="http://192.168.0.1/" class="footer-link">192.168.0.1</a></li>
+                        <li><a href="http://10.0.0.1/" class="footer-link">10.0.0.1</a></li>
+                        <li><a href="http://192.168.2.1/" class="footer-link">192.168.2.1</a></li>
                     </ul>
                 </div>
             </div>
