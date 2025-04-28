@@ -102,9 +102,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Cards */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 1.5rem;
  
-  padding: 1.25rem;
+  padding: 10px;
 }
 
 section {
@@ -143,7 +142,7 @@ section:last-child {
   min-height: 120px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+
 }
 
 .search-container {
