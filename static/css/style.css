@@ -273,7 +273,6 @@ section:last-child {
 
 [data-bs-theme="dark"] .login-instructions {
   background-color: #2b3035;
-  border-left: 4px solid #28a745;
 }
 
 [data-bs-theme="dark"] .default-credentials {
