@@ -261,9 +261,8 @@ section:last-child {
 
 .login-instructions {
   background-color: white;
-  border-left: 4px solid #28a745;
-  padding: 1rem;
-  margin: 1rem 0;
+  padding:;
+  margin: 0px 0px 0px -30px;
 }
 
 .default-credentials {
